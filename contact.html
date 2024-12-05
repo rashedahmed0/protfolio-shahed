@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shahed</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.14/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <style>
+        .shodow {
+            border-radius: 8px;
+            transition: 0.5s;
+        }
+
+        .shodow:hover {
+            box-shadow: rgba(116, 116, 126, 0.2) 0px 7px 29px 0px;
+
+        }
+
+        .skills-container {
+            width: 100%;
+            /* max-width: 600px; */
+            margin: 0 auto;
+        }
+
+        .skill {
+            margin: 20px 0;
+        }
+
+        .skill-name {
+            font-size: 18px;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        .skill-bar {
+            background-color: #ddd;
+            width: 100%;
+            height: 20px;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .skill-level {
+            height: 100%;
+            border-radius: 10px;
+            animation-duration: 5s;
+            animation-fill-mode: forwards;
+        }
+
+        .html {
+            width: 0;
+            background-color: #049ad2;
+            animation-name: htmlSkill;
+        }
+
+        .css {
+            width: 0;
+            background-color: #049ad2;
+            animation-name: cssSkill;
+        }
+
+        .js {
+            width: 0;
+            background-color: #049ad2;
+            animation-name: jsSkill;
+        }
+
+        .bootstrap {
+            width: 0;
+            background-color: #049ad2;
+            animation-name: bootstrapSkill;
+        }
+
+        .tailwind {
+            width: 0;
+            background-color: #049ad2;
+            animation-name: tailwindSkill;
+        }
+
+        /* Animation keyframes */
+        @keyframes htmlSkill {
+            to {
+                width: 90%;
+                /* Adjust percentage for skill level */
+            }
+        }
+
+        @keyframes cssSkill {
+            to {
+                width: 80%;
+                /* Adjust percentage for skill level */
+            }
+        }
+
+        @keyframes jsSkill {
+            to {
+                width: 70%;
+                /* Adjust percentage for skill level */
+            }
+        }
+
+        @keyframes bootstrapSkill {
+            to {
+                width: 75%;
+                /* Adjust percentage for skill level */
+            }
+        }
+
+        @keyframes tailwindSkill {
+            to {
+                width: 85%;
+                /* Adjust percentage for skill level */
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="home flex">
+        <!-- Sidebar -->
+        <div class="menu w-[80%] lg:w-[300px] h-screen bg-[#17181b] grid grid-cols-1  overflow-scroll">
+            <div class="w-[100%] logo">
+                <img src="./img/shahed.jpg" alt="">
+                <h1 class="name text-3xl">Shahed Ahmed</h1>
+            </div>
+            <div class="flex justify-center">
+                <ul class="text-[#777777] text-xl">
+                    <li style="transition: 0.5s;" class="hover:text-white text-2xl mt-5"><a href="./index.html"><i
+                                class="fa-solid fa-house"></i> Home </a></li>
+                    <li style="transition: 0.5s;" class="hover:text-white text-2xl mt-5"><a href="./about.html"><i
+                                class="fa-solid fa-user"></i> About Me</a></li>
+                    <li style="transition: 0.5s;" class="hover:text-white text-2xl mt-5"><a href="./resume.html"><i
+                                class="fa-solid fa-file"></i> Resume</a></li>
+                    <li style="transition: 0.5s;" class="hover:text-white text-2xl mt-5"><a href=""><i
+                                class="fa-solid fa-briefcase"></i> Portfolio</a></li>
+                    <li style="transition: 0.5s;" class="hover:text-white text-2xl mt-5"><a href=""><i
+                                class="fa-solid fa-book"></i> Blog</a></li>
+                    <li style="transition: 0.5s;" class="hover:text-white text-2xl mt-5"><a href="./contact.html"><i
+                                class="fa-solid fa-address-book"></i> Contact</a></li>
+                </ul>
+            </div>
+            <div class="social text-center text-[#777777] text-xl">
+                <i class="text-xl lg:text-3xl mx-2 mt-5 mb-5 fa-brands fa-facebook"></i>
+                <i class="text-xl lg:text-3xl mx-2 mt-5 mb-5 fa-brands fa-github"></i>
+                <i class="text-xl lg:text-3xl mx-2 mt-5 mb-5 fa-brands fa-linkedin"></i>
+                <i class="text-xl lg:text-3xl mx-2 mt-5 mb-5 fa-brands fa-whatsapp"></i>
+                <p>2024 © Shahed Ahmed. All Rights Reserved.</p>
+            </div>
+        </div>
+
+        <!-- Main Content -->
+        <div class="w-full h-screen lg:w-[80%] bg-[#2c2d2f] overflow-scroll">
+            <div class="w-[90%] mx-auto">
+                <!-- title -->
+                <div
+                    class="text-[#049ad2] text-4xl pt-10 lg:text-6xl flex justify-between items-center mt-10 pb-5 border-b-2 border-[#999]">
+                    <h1 class="font-bold">Contact Me.</h1>
+                    <i class="fa-regular fa-address-book"></i>
+                </div>
+            </div>
+            <div class="w-[90%] mx-auto">
+                <!-- title -->
+                <div class="text-center text-4xl font-bold text-white w-[80%] md:w-[40%] mx-auto mt-10">
+                    <h1 class="border-b-2 border-[#049ad2] pb-5">Let's Talk</h1>
+                </div>
+
+                <form action="mt-10">
+                    <div class="flex justify-between my-10">
+                        <input placeholder="Name "
+                            class="w-[48%] bg-transparent border-2 outline-none border-[#999] p-5" type="text">
+                        <input placeholder="Email"
+                            class="w-[48%] bg-transparent border-2 outline-none border-[#999] p-5" type="text">
+                    </div>
+                    <textarea placeholder="How can i help you"
+                        class="w-full bg-transparent px-5 pt-5 pb-16 border-2 outline-none border-[#999]"></textarea>
+                </form>
+                <div class="flex justify-center items-center mt-10">
+                    <div
+                        class="flex justify-center px-6 py-3 border-4 border-[#049ad2] text-2xl font-bold text-[#049ad2]">
+                        <p>Send Message</p>
+                    </div>
+                </div>
+                <div class="flex justify-between mt-10">
+                    <div class="text-white text-center">
+                        <i class="fa-brands fa-telegram text-4xl text-[#049ad2]"></i>
+                        <p class="text-2xl">example@example.com</p>
+                    </div>
+                    <div class="text-white text-center">
+                        <i class="fa-solid fa-location-dot text-4xl text-[#049ad2]"></i>
+                        <p class="text-2xl">123 Lorem Ipsum, USA</p>
+                    </div>
+                    <div class="text-white text-center">
+                        <i class="fa-solid fa-phone-flip text-4xl text-[#049ad2]"></i>
+                        <p class="text-2xl">
+                            (+1) 123 456 7890</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Menu Toggle Icon -->
+    <div class="menu-icon" onclick="toggleMenu()">
+        <i class="fa-solid fa-bars"></i>
+    </div>
+    <script src="./js/script.js"></script>
+</body>
+
+</html>

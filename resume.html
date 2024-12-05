@@ -19,6 +19,104 @@
             box-shadow: rgba(116, 116, 126, 0.2) 0px 7px 29px 0px;
 
         }
+
+        .skills-container {
+            width: 100%;
+            /* max-width: 600px; */
+            margin: 0 auto;
+        }
+
+        .skill {
+            margin: 20px 0;
+        }
+
+        .skill-name {
+            font-size: 18px;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        .skill-bar {
+            background-color: #ddd;
+            width: 100%;
+            height: 20px;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .skill-level {
+            height: 100%;
+            border-radius: 10px;
+            animation-duration: 5s;
+            animation-fill-mode: forwards;
+        }
+
+        .html {
+            width: 0;
+            background-color: #049ad2;
+            animation-name: htmlSkill;
+        }
+
+        .css {
+            width: 0;
+            background-color: #049ad2;
+            animation-name: cssSkill;
+        }
+
+        .js {
+            width: 0;
+            background-color: #049ad2;
+            animation-name: jsSkill;
+        }
+
+        .bootstrap {
+            width: 0;
+            background-color: #049ad2;
+            animation-name: bootstrapSkill;
+        }
+
+        .tailwind {
+            width: 0;
+            background-color: #049ad2;
+            animation-name: tailwindSkill;
+        }
+
+        /* Animation keyframes */
+        @keyframes htmlSkill {
+            to {
+                width: 90%;
+                /* Adjust percentage for skill level */
+            }
+        }
+
+        @keyframes cssSkill {
+            to {
+                width: 80%;
+                /* Adjust percentage for skill level */
+            }
+        }
+
+        @keyframes jsSkill {
+            to {
+                width: 70%;
+                /* Adjust percentage for skill level */
+            }
+        }
+
+        @keyframes bootstrapSkill {
+            to {
+                width: 75%;
+                /* Adjust percentage for skill level */
+            }
+        }
+
+        @keyframes tailwindSkill {
+            to {
+                width: 85%;
+                /* Adjust percentage for skill level */
+            }
+        }
     </style>
 </head>
 
@@ -32,17 +130,17 @@
             </div>
             <div class="flex justify-center">
                 <ul class="text-[#777777] text-xl">
-                    <li style="transition: 0.5s;" class="hover:text-white text-2xl mt-5"><a href=""><i
+                    <li style="transition: 0.5s;" class="hover:text-white text-2xl mt-5"><a href="./index.html"><i
                                 class="fa-solid fa-house"></i> Home </a></li>
-                    <li style="transition: 0.5s;" class="hover:text-white text-2xl mt-5"><a href=""><i
+                    <li style="transition: 0.5s;" class="hover:text-white text-2xl mt-5"><a href="./about.html"><i
                                 class="fa-solid fa-user"></i> About Me</a></li>
-                    <li style="transition: 0.5s;" class="hover:text-white text-2xl mt-5"><a href=""><i
+                    <li style="transition: 0.5s;" class="hover:text-white text-2xl mt-5"><a href="./resume.html"><i
                                 class="fa-solid fa-file"></i> Resume</a></li>
                     <li style="transition: 0.5s;" class="hover:text-white text-2xl mt-5"><a href=""><i
                                 class="fa-solid fa-briefcase"></i> Portfolio</a></li>
                     <li style="transition: 0.5s;" class="hover:text-white text-2xl mt-5"><a href=""><i
                                 class="fa-solid fa-book"></i> Blog</a></li>
-                    <li style="transition: 0.5s;" class="hover:text-white text-2xl mt-5"><a href=""><i
+                    <li style="transition: 0.5s;" class="hover:text-white text-2xl mt-5"><a href="./contact.html"><i
                                 class="fa-solid fa-address-book"></i> Contact</a></li>
                 </ul>
             </div>
@@ -62,28 +160,145 @@
                 <div
                     class="text-[#049ad2] text-4xl pt-10 lg:text-6xl flex justify-between items-center mt-10 pb-5 border-b-2 border-[#999]">
                     <h1 class="font-bold">My Resume</h1>
-                    <i class="fa-regular fa-user"></i>
+                    <i class="fa-regular fa-file"></i>
                 </div>
-                <div class=" text-white">
-                    <h1 class="text-3xl font-bold">
-                        UI/UX Designer & Developer
-                    </h1>
-                    <p class="text-xl mt-5">
-                        Dolor reprehenderit aut repudiandae maiores recusandae. Consequatur dolor nisi labore
-                        commodi ipsa? Excepturi velit laboriosam at voluptatibus cupiditate est vel. Dolorem
-                        praesentium itaque fugiat placeat quas consequatur? Obcaecati natus rerum
-                    </p>
-                    <p class="text-xl mt-5">
-                        Consectetur consectetur nesciunt nesciunt blanditiis amet? Quod quis unde aliquid excepturi
-                        laudantium? Illo architecto aliquam velit illo magnam neque perferendis sint Incidunt eius
-                        ipsa inventore labore eos velit. Minus hic magni reiciendis necessitatibus ex Quidem officia
-                        deleniti accusamus obcaecati dolores. Porro culpa quibusdam impedit porro praesentium
-                        excepturi. Alias ab consequatur?
-                    </p>
+            </div>
+            <div class="w-[90%] mx-auto">
+                <!-- Exprience section -->
+                <div class="text-center text-4xl font-bold text-white w-[80%] md:w-[40%] mx-auto mt-10">
+                    <h1 class="border-b-2 border-[#049ad2] pb-5">Experience</h1>
                 </div>
 
+                <div class="grid  grid-cols-1 mt-10">
+                    <!-- card -->
+                    <div class="w-full lg:w-[70%] my-10 text-white py-5 pl-5 border-l-2 border-[#049ad2] ">
+                        <h1 class="text-3xl font-bold">Lead UI Designer</h1>
+                        <h4 class="text-lg font-bold text-[#049ad2]">Big Design Company, NY, USA <span
+                                class="text-[#999] text-md font-bold">|| 2018 to 2016</span> </h4>
+                        <p class="text-xl text-[#777]">Sit cupiditate praesentium ex esse nulla Facere fuga perspiciatis
+                            eveniet
+                            provident neque Ea ratione non minus temporibus ipsum Sunt minima</p>
+                    </div>
+                    <div class="w-full lg:w-[70%] my-10 text-white py-5 pl-5 border-l-2 border-[#049ad2] ">
+                        <h1 class="text-3xl font-bold">Web Designer</h1>
+                        <h4 class="text-lg font-bold text-[#049ad2]">Big Design Company, NY, USA <span
+                                class="text-[#999] text-md font-bold">|| 2016 to 2014</span> </h4>
+                        <p class="text-xl text-[#777]">Sit cupiditate praesentium ex esse nulla Facere fuga perspiciatis
+                            eveniet
+                            provident neque Ea ratione non minus temporibus ipsum Sunt minima</p>
+                    </div>
+                    <div class="w-full lg:w-[70%] my-10 text-white py-5 pl-5 border-l-2 border-[#049ad2] ">
+                        <h1 class="text-3xl font-bold">Web Developer</h1>
+                        <h4 class="text-lg font-bold text-[#049ad2]">Big Design Company, NY, USA <span
+                                class="text-[#999] text-md font-bold">|| 2014 to 2013</span> </h4>
+                        <p class="text-xl text-[#777]">Sit cupiditate praesentium ex esse nulla Facere fuga perspiciatis
+                            eveniet
+                            provident neque Ea ratione non minus temporibus ipsum Sunt minima</p>
+                    </div>
+                </div>
+            </div>
+            <div class="w-[90%] mx-auto">
+                <!-- Exprience section -->
+                <div class="text-center text-4xl font-bold text-white w-[80%] md:w-[40%] mx-auto mt-10">
+                    <h1 class="border-b-2 border-[#049ad2] pb-5">Education</h1>
+                </div>
 
+                <div class="grid  grid-cols-1 mt-10">
+                    <!-- card -->
+                    <div class="w-full lg:w-[70%] my-10 text-white py-5 pl-5 border-l-2 border-[#049ad2] ">
+                        <h1 class="text-3xl font-bold">SSC</h1>
+                        <h4 class="text-lg font-bold text-[#049ad2]">Big Design Company, NY, USA <span
+                                class="text-[#999] text-md font-bold">|| 2018 to 2016</span> </h4>
+                        <p class="text-xl text-[#777]">Sit cupiditate praesentium ex esse nulla Facere fuga perspiciatis
+                            eveniet
+                            provident neque Ea ratione non minus temporibus ipsum Sunt minima</p>
+                    </div>
+                    <div class="w-full lg:w-[70%] my-10 text-white py-5 pl-5 border-l-2 border-[#049ad2] ">
+                        <h1 class="text-3xl font-bold">BSC in CSE</h1>
+                        <h4 class="text-lg font-bold text-[#049ad2]">Big Design Company, NY, USA <span
+                                class="text-[#999] text-md font-bold">|| 2016 to 2014</span> </h4>
+                        <p class="text-xl text-[#777]">Sit cupiditate praesentium ex esse nulla Facere fuga perspiciatis
+                            eveniet
+                            provident neque Ea ratione non minus temporibus ipsum Sunt minima</p>
+                    </div>
+                    <div class="w-full lg:w-[70%] my-10 text-white py-5 pl-5 border-l-2 border-[#049ad2] ">
+                        <h1 class="text-3xl font-bold">HSC</h1>
+                        <h4 class="text-lg font-bold text-[#049ad2]">Big Design Company, NY, USA <span
+                                class="text-[#999] text-md font-bold">|| 2014 to 2013</span> </h4>
+                        <p class="text-xl text-[#777]">Sit cupiditate praesentium ex esse nulla Facere fuga perspiciatis
+                            eveniet
+                            provident neque Ea ratione non minus temporibus ipsum Sunt minima</p>
+                    </div>
+                </div>
+            </div>
+            <div class="w-[90%] mx-auto">
+                <div class="text-center text-4xl font-bold text-white w-[80%] md:w-[40%] mx-auto mt-10">
+                    <h1 class="border-b-2 border-[#049ad2] pb-5">Coding Skills</h1>
+                </div>
+                <!-- coding section -->
+                <div class="skills-container">
+                    <div class="skill ">
+                        <div class="skill-name flex justify-between">
+                            <p class="text-[#999]">
+                                HTML
 
+                            </p>
+                            <div class="percentage text-[#999]">90%</div> <!-- Added percentage here -->
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-level html"></div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <div class="skill-name flex justify-between">
+                            <p class="text-[#999]">
+                                CSS
+
+                            </p>
+                            <div class="percentage text-[#999]">80%</div> <!-- Added percentage here -->
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-level css"></div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <div class="skill-name flex justify-between">
+                            <p class="text-[#999]">
+                                JavaScript
+
+                            </p>
+                            <div class="percentage text-[#999]">70%</div> <!-- Added percentage here -->
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-level js"></div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <div class="skill-name flex justify-between">
+                            <p class="text-[#999]">
+                                Bootstrap
+
+                            </p>
+                            <div class="percentage text-[#999]">75%</div> <!-- Added percentage here -->
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-level bootstrap"></div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <div class="skill-name flex justify-between">
+                            <p class="text-[#999]">
+                                Tailwind CSS
+
+                            </p>
+                            <div class="percentage text-[#999]">85%</div> <!-- Added percentage here -->
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-level tailwind"></div>
+                        </div>
+                    </div>
+
+                </div>
             </div>
         </div>
     </div>
