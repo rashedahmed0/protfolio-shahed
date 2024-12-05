@@ -98,3 +98,39 @@ right: 0; */
         font-size: 20px !important;
     }
 }
+
+.typing-container {
+    white-space: nowrap;
+    /* Cursor effect */
+    animation: typing 4s steps(20) 1s forwards, blink-caret 0.75s step-end infinite;
+}
+
+/* Keyframes for typing effect */
+@keyframes typing {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 100%;
+    }
+}
+
+/* Keyframes for cursor blinking */
+@keyframes blink-caret {
+    50% {
+        border-color: transparent;
+    }
+}
+
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .menu {
+        width: 300px !important;
+        /* Adjust menu width for tablet devices */
+    }
+
+    .name {
+        font-size: 20px !important;
+    }
+}

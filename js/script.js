@@ -2,8 +2,8 @@
 function toggleMenu() {
     const menu = document.querySelector('.menu');
     menu.classList.toggle('active');
-}
 
+}
 // JavaScript code to change text and apply typing effect
 const texts = ["I am a FullStack Developer", "I am a Backend Developer", "I am a .Net Developer"];
 let textIndex = 0; // To switch between texts
