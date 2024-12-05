@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shahed</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.14/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <style>
+        .shodow {
+            border-radius: 8px;
+            transition: 0.5s;
+        }
+
+        .shodow:hover {
+            box-shadow: rgba(116, 116, 126, 0.2) 0px 7px 29px 0px;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="home flex">
+        <!-- Sidebar -->
+        <div class="menu w-[80%] lg:w-[300px] h-screen bg-[#17181b] grid grid-cols-1  overflow-scroll">
+            <div class="w-[100%] logo">
+                <img src="./img/shahed.jpg" alt="">
+                <h1 class="name text-3xl">Shahed Ahmed</h1>
+            </div>
+            <div class="flex justify-center">
+                <ul class="text-[#777777] text-xl">
+                    <li style="transition: 0.5s;" class="hover:text-white text-2xl mt-5"><a href=""><i
+                                class="fa-solid fa-house"></i> Home </a></li>
+                    <li style="transition: 0.5s;" class="hover:text-white text-2xl mt-5"><a href=""><i
+                                class="fa-solid fa-user"></i> About Me</a></li>
+                    <li style="transition: 0.5s;" class="hover:text-white text-2xl mt-5"><a href=""><i
+                                class="fa-solid fa-file"></i> Resume</a></li>
+                    <li style="transition: 0.5s;" class="hover:text-white text-2xl mt-5"><a href=""><i
+                                class="fa-solid fa-briefcase"></i> Portfolio</a></li>
+                    <li style="transition: 0.5s;" class="hover:text-white text-2xl mt-5"><a href=""><i
+                                class="fa-solid fa-book"></i> Blog</a></li>
+                    <li style="transition: 0.5s;" class="hover:text-white text-2xl mt-5"><a href=""><i
+                                class="fa-solid fa-address-book"></i> Contact</a></li>
+                </ul>
+            </div>
+            <div class="social text-center text-[#777777] text-xl">
+                <i class="text-xl lg:text-3xl mx-2 mt-5 mb-5 fa-brands fa-facebook"></i>
+                <i class="text-xl lg:text-3xl mx-2 mt-5 mb-5 fa-brands fa-github"></i>
+                <i class="text-xl lg:text-3xl mx-2 mt-5 mb-5 fa-brands fa-linkedin"></i>
+                <i class="text-xl lg:text-3xl mx-2 mt-5 mb-5 fa-brands fa-whatsapp"></i>
+                <p>2024 © Shahed Ahmed. All Rights Reserved.</p>
+            </div>
+        </div>
+
+        <!-- Main Content -->
+        <div class="w-full h-screen lg:w-[80%] bg-[#2c2d2f] overflow-scroll">
+            <div class="w-[90%] mx-auto">
+                <!-- title -->
+                <div
+                    class="text-[#049ad2] text-4xl pt-10 lg:text-6xl flex justify-between items-center mt-10 pb-5 border-b-2 border-[#999]">
+                    <h1 class="font-bold">My Resume</h1>
+                    <i class="fa-regular fa-user"></i>
+                </div>
+                <div class=" text-white">
+                    <h1 class="text-3xl font-bold">
+                        UI/UX Designer & Developer
+                    </h1>
+                    <p class="text-xl mt-5">
+                        Dolor reprehenderit aut repudiandae maiores recusandae. Consequatur dolor nisi labore
+                        commodi ipsa? Excepturi velit laboriosam at voluptatibus cupiditate est vel. Dolorem
+                        praesentium itaque fugiat placeat quas consequatur? Obcaecati natus rerum
+                    </p>
+                    <p class="text-xl mt-5">
+                        Consectetur consectetur nesciunt nesciunt blanditiis amet? Quod quis unde aliquid excepturi
+                        laudantium? Illo architecto aliquam velit illo magnam neque perferendis sint Incidunt eius
+                        ipsa inventore labore eos velit. Minus hic magni reiciendis necessitatibus ex Quidem officia
+                        deleniti accusamus obcaecati dolores. Porro culpa quibusdam impedit porro praesentium
+                        excepturi. Alias ab consequatur?
+                    </p>
+                </div>
+
+
+
+            </div>
+        </div>
+    </div>
+
+    <!-- Menu Toggle Icon -->
+    <div class="menu-icon" onclick="toggleMenu()">
+        <i class="fa-solid fa-bars"></i>
+    </div>
+    <script src="./js/script.js"></script>
+</body>
+
+</html>
