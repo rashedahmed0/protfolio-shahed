@@ -110,6 +110,30 @@ right: 0; */
                 font-size: 20px !important;
             }
         }
+
+        .typing-container {
+            white-space: nowrap;
+            /* Cursor effect */
+            animation: typing 4s steps(20) 1s forwards, blink-caret 0.75s step-end infinite;
+        }
+
+        /* Keyframes for typing effect */
+        @keyframes typing {
+            from {
+                width: 0;
+            }
+
+            to {
+                width: 100%;
+            }
+        }
+
+        /* Keyframes for cursor blinking */
+        @keyframes blink-caret {
+            50% {
+                border-color: transparent;
+            }
+        }
     </style>
 </head>
 
@@ -151,8 +175,10 @@ right: 0; */
             <div class="background h-[100vh] bg-cover bg-center" style="background-image: url('./img/banner.jpg');">
                 <div class="flex justify-center items-center text-center h-full">
                     <div class="text-center">
-                        <h1 class="text-white my-10 text-4xl md:text-6xl font-bold">Shahed Ahmed</h1>
-                        <h2 class="text-white text-xl md:text-5xl font-semibold">I am a Backend Developer</h2>
+                        <h1 class="text-white my-10 text-4xl md:text-6xl font-bold">Shahed <span
+                                class="text-[#068ec4]">Ahmed</span></h1>
+                        <div id="typingText" class="typing-container text-2xl lg:text-4xl font-bold text-white"></div>
+
                     </div>
                 </div>
             </div>
@@ -168,7 +194,32 @@ right: 0; */
         function toggleMenu() {
             const menu = document.querySelector('.menu');
             menu.classList.toggle('active');
+
         }
+        // JavaScript code to change text and apply typing effect
+        const texts = ["I am a FullStack Developer", "I am a Backend Developer", "I am a .Net Developer"];
+        let textIndex = 0; // To switch between texts
+        const typingText = document.getElementById("typingText");
+
+        function typeText(text) {
+            typingText.textContent = ""; // Clear previous text
+            let i = 0;
+            const interval = setInterval(() => {
+                typingText.textContent += text.charAt(i);
+                i++;
+                if (i === text.length) {
+                    clearInterval(interval);
+                    setTimeout(() => {
+                        // Wait for a second before changing the text
+                        textIndex = (textIndex + 1) % texts.length;
+                        typeText(texts[textIndex]);
+                    }, 1000);
+                }
+            }, 150); // Adjust the speed of typing here (milliseconds)
+        }
+
+        // Start typing with the first text
+        typeText(texts[textIndex]);
     </script>
 </body>
 
