@@ -1,0 +1,100 @@
+.logo {
+    position: relative;
+}
+
+.name {
+    width: 100%;
+    position: absolute;
+    background-color: #068dc4a8;
+    color: white;
+    text-align: center;
+    bottom: 0px;
+    font-weight: 700;
+    padding: 8px 0;
+}
+
+.background {
+    /* position: absolute;
+top: 0;
+right: 0; */
+    /* width: 100%; */
+    /* height: 100%; */
+    animation: changeBackground 15s infinite;
+    background-size: cover;
+    background-position: center;
+}
+
+/* Animation Keyframes */
+@keyframes changeBackground {
+    0% {
+        background-image: url('./img/banner\ \(1\).jpg');
+    }
+
+    33% {
+        background-image: url('./img/banner\ \(3\).jpg');
+    }
+
+    66% {
+        background-image: url('./img/banner\ \(1\).webp');
+    }
+
+    100% {
+        background-image: url('./img/banner\ \(2\).jpg');
+    }
+}
+
+/* Internal CSS for the menu bar */
+.menu {
+    position: fixed;
+    top: 0;
+    left: -450px;
+    /* Initially positioned off-screen on the left */
+    /* width: 300px; */
+    height: 100vh;
+    background-color: #17181b;
+    transition: left 0.5s ease-in-out;
+    z-index: 1000;
+}
+
+/* Menu icon (hamburger) */
+.menu-icon {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
+    z-index: 1100;
+}
+
+/* Show menu when active */
+.menu.active {
+    left: 0;
+    /* Slide the menu in from the left */
+}
+
+/* Make sure menu section is hidden on small screens */
+@media (min-width: 768px) {
+    .menu {
+        display: block !important;
+        position: static;
+        left: 0;
+        height: auto;
+        transition: none;
+    }
+
+    .menu-icon {
+        display: none;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .menu {
+        width: 300px !important;
+        /* Adjust menu width for tablet devices */
+    }
+
+    .name {
+        font-size: 20px !important;
+    }
+}
